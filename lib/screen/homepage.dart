@@ -209,32 +209,28 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular(10),
                       color: Color.fromARGB(255, 237, 150, 240),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Text("data"),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Image.asset(
-                              "assets/images/google.png",
-                              width: 50,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: ElevatedButton(
-                              onPressed: (() => {}),
-                              child: Text("Pick From Map"),
-                              style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      kprimary //elevated btton background color
-                                  ),
-                            ),
-                          ),
-                        ],
-                      ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Download Our App Now!",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25),
+                        ),
+                        Image.asset(
+                          "assets/images/google.png",
+                          width: 100,
+                        ),
+                        Image.asset(
+                          "assets/images/google.png",
+                          width: 100,
+                        ),
+                        Image.asset(
+                          "assets/images/apple.png",
+                          width: 100,
+                        ),
+                      ],
                     ),
                   ),
                 ],
