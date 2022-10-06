@@ -150,7 +150,11 @@ class _HomeState extends State<Home> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Image.asset("assets/images/logo.png", width: 80),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset("assets/images/clip-geo.png",
+                                width: 25),
+                          ),
                           Expanded(
                             child: TextFormField(
                               decoration: InputDecoration(
@@ -212,9 +216,12 @@ class _HomeState extends State<Home> {
                         children: [
                           Text("data"),
                           Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child:
-                                  Image.asset("assets/images/googleplay.png")),
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              "assets/images/google.png",
+                              width: 50,
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: ElevatedButton(
